@@ -1,6 +1,6 @@
 {
   "name": "@3kles/kles-material-moment-adapter",
-  "version": "14.0.0",
+  "version": "14.0.1",
   "peerDependencies": {
     "@angular/animations": "^14.0.0",
     "@angular/cdk": "^14.0.0",
@@ -9,6 +9,7 @@
     "@angular/core": "^14.0.0",
     "@angular/forms": "^14.0.0",
     "@angular/material": "^14.0.0",
+    "@angular/material-moment-adapter": "^14.1.0",
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
@@ -17,8 +18,7 @@
     "hammerjs": "^2.0.8",
     "jquery": "^3.5.1",
     "rxjs": "~6.5.4",
-    "zone.js": "~0.10.3",
-    "@angular/material-moment-adapter": "^14.1.0"
+    "zone.js": "~0.10.3"
   },
   "dependencies": {
     "tslib": "^2.0.0"
