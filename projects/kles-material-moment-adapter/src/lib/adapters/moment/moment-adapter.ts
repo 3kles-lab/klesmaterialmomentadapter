@@ -3,12 +3,9 @@
 import { KlesMatDateAdapter } from '@3kles/kles-material-datepicker';
 import { Inject, Injectable, InjectionToken, Optional } from '@angular/core';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
-import * as _moment from 'moment';
+import moment from 'moment';
 // tslint:disable-next-line:no-duplicate-imports
-import { default as _rollupMoment, localeData, Moment, MomentFormatSpecification, MomentInput } from 'moment';
-
-
-const moment = _rollupMoment || _moment;
+import { localeData, Moment, MomentFormatSpecification, MomentInput } from 'moment';
 
 /** InjectionToken for moment date adapter to configure options. */
 export const KLES_MAT_MOMENT_DATE_ADAPTER_OPTIONS = new InjectionToken<KlesMatMomentDateAdapterOptions>(
@@ -222,22 +219,22 @@ export class KlesMatMomentAdapter extends KlesMatDateAdapter<Moment> {
     return moment.invalid();
   }
 
-  getHour(date: _moment.Moment): number {
+  getHour(date: Moment): number {
     return date.hours();
   }
-  getMinute(date: _moment.Moment): number {
+  getMinute(date: Moment): number {
     return date.minutes();
   }
-  getSecond(date: _moment.Moment): number {
+  getSecond(date: Moment): number {
     return date.seconds();
   }
-  setHour(date: _moment.Moment, value: number): void {
+  setHour(date: Moment, value: number): void {
     date.hours(value);
   }
-  setMinute(date: _moment.Moment, value: number): void {
+  setMinute(date: Moment, value: number): void {
     date.minutes(value)
   }
-  setSecond(date: _moment.Moment, value: number): void {
+  setSecond(date: Moment, value: number): void {
     date.seconds(value);
   }
 
