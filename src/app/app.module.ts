@@ -11,28 +11,43 @@ import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-transla
 import localeFr from '@angular/common/locales/fr';
 import { CommonModule, registerLocaleData } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { KlesMaterialDatepickerModule } from '@3kles/kles-material-datepicker';
+import { MatMomentDateModule } from '@angular/material-moment-adapter';
+import { KlesMatMomentModule } from 'kles-material-moment-adapter';
 registerLocaleData(localeFr);
 
-@NgModule({ declarations: [
-        AppComponent,
+@NgModule({
+    declarations: [
+        AppComponent
     ],
     exports: [],
-    bootstrap: [AppComponent], imports: [CommonModule,
+    bootstrap: [AppComponent],
+    imports: [
+        CommonModule,
         BrowserModule,
         AppRoutingModule,
         MaterialModule,
         BrowserAnimationsModule,
         FormsModule,
         ReactiveFormsModule,
+        KlesMaterialDatepickerModule,
+        MatMomentDateModule,
+        KlesMatMomentModule,
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,
                 useFactory: (HttpLoaderFactory),
                 deps: [HttpClient]
             }
-        })], providers: [TranslateService, { provide: LOCALE_ID, useValue: 'fr-FR' }, provideHttpClient(withInterceptorsFromDi())] })
+        })
+    ],
+    providers: [
+        TranslateService,
+        { provide: LOCALE_ID, useValue: 'fr-FR' },
+        provideHttpClient(withInterceptorsFromDi())
+    ]
+})
 export class AppModule {
-
 }
 
 export function HttpLoaderFactory(http: HttpClient) {

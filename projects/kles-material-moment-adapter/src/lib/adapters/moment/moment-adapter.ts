@@ -228,14 +228,20 @@ export class KlesMatMomentAdapter extends KlesMatDateAdapter<Moment> {
   getSecond(date: Moment): number {
     return date.seconds();
   }
-  setHour(date: Moment, value: number): void {
-    date.hours(value);
+  setHour(date: Moment, value: number): Moment {
+    const clone: Moment = this.clone(date).hours(value);
+    return clone;
   }
-  setMinute(date: Moment, value: number): void {
-    date.minutes(value)
+  setMinute(date: Moment, value: number): Moment {
+    const clone: Moment = this.clone(date).minutes(value);
+    return clone;
   }
-  setSecond(date: Moment, value: number): void {
-    date.seconds(value);
+  setSecond(date: Moment, value: number): Moment {
+    const clone: Moment = this.clone(date).seconds(value);
+    return clone;
+  }
+  getDay(date: Moment): string {
+    return this.format(date, 'dddd');
   }
 
   /** Creates a Moment instance while respecting the current UTC settings. */
