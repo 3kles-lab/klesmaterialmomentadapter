@@ -1,7 +1,6 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "esModuleInterop": true,
@@ -16,18 +15,18 @@
     ],
     "paths": {
       "kles-material-moment-adapter": [
-        "dist/kles-material-moment-adapter/kles-material-moment-adapter",
-        "dist/kles-material-moment-adapter"
+        "./dist/kles-material-moment-adapter/kles-material-moment-adapter",
+        "./dist/kles-material-moment-adapter"
       ],
       "kles-material-moment-adapter/*": [
-        "dist/kles-material-moment-adapter/kles-material-moment-adapter",
-        "dist/kles-material-moment-adapter"
+        "./dist/kles-material-moment-adapter/kles-material-moment-adapter",
+        "./dist/kles-material-moment-adapter"
       ]
     },
     "useDefineForClassFields": false
   },
   "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true,
+    "strictTemplates": true,
     "strictInjectionParameters": true
   }
 }
