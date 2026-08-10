@@ -43,7 +43,7 @@ function range<T>(length: number, valueFunction: (index: number) => T): T[] {
 @Injectable()
 export class KlesMatMomentAdapter extends KlesMatDateAdapter<Moment> {
 
-  private _localeData: {
+  private _localeData!: {
     firstDayOfWeek: number,
     longMonths: string[],
     shortMonths: string[],
