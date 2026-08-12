@@ -1,3 +1,15 @@
+# [21.1.0](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialmomentadapter/compare/v21.0.0...v21.1.0) (2026-08-12)
+
+
+### Bug Fixes
+
+* Update library dependencies ([c93d9b5](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialmomentadapter/commit/c93d9b50bfbdcb31643164b27602832bb39ec182))
+
+
+### Features
+
+* Update KlesMatDateAdapter implementations ([3d0e132](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialmomentadapter/commit/3d0e1329df9ddfd1abc6609dff627b626cd85332))
+
 # [21.0.0](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialmomentadapter/compare/v20.0.0...v21.0.0) (2026-08-07)
 
 
