@@ -1,3 +1,10 @@
+## [20.0.1](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialmomentadapter/compare/v20.0.0...v20.0.1) (2026-08-12)
+
+
+### Bug Fixes
+
+* Update library dependencies ([dba169b](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialmomentadapter/commit/dba169b25eb55447884507da4011e3d7fafc19fd))
+
 # [20.0.0](http://gitlab.3kles.local/3kles/lib/angular/material/klesmaterialadapter/klesmaterialmomentadapter/compare/v19.0.0...v20.0.0) (2026-08-07)
 
 
