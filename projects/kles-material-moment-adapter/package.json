@@ -1,6 +1,6 @@
 {
   "name": "@3kles/kles-material-moment-adapter",
-  "version": "22.0.0",
+  "version": "22.1.0",
   "peerDependencies": {
     "@angular/core": "^22.1.1",
     "@angular/material": "^22.1.1",
